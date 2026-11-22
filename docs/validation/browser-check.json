@@ -1,0 +1,7 @@
+{
+  "status": "NOT TESTED",
+  "scope": "Local Chromium DOM simulation and visual layout",
+  "reason": "Chromium launch failed in this turn because local socket creation was denied; no dev.6 browser checks or generated screenshots are claimed. Owner screenshots were visually compared for row pitch only.",
+  "live_foundry": "NOT TESTED",
+  "version": "13.0.0-dev.6"
+}

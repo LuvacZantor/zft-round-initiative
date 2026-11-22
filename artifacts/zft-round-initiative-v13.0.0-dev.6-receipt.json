@@ -1,0 +1,32 @@
+{
+  "archive": "zft-round-initiative-v13.0.0-dev.6.zip",
+  "sha256": "fa4d89ffc50ec8fd7e3415b4dcd9c0bea594c86a7f8023e6d3d89f7f0691afa7",
+  "files": 51,
+  "bytes": 100170,
+  "version": "13.0.0-dev.6",
+  "tests": {
+    "tests": 96,
+    "pass": 96,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0
+  },
+  "extracted_zip_tests": {
+    "tests": 96,
+    "pass": 96,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0
+  },
+  "static": {
+    "javascript_syntax_files": 29,
+    "resolved_imports": 66,
+    "templates_checked": 2,
+    "css": "structural brace/scoped-selector checks; browser parsing/layout NOT TESTED",
+    "protected_sources": "SHA-256 verified; original MIT Git blob verified",
+    "native_round_mutation": "none in module runtime"
+  },
+  "zip_crc": "PASS",
+  "duplicate_paths": 0,
+  "github": "unchanged"
+}

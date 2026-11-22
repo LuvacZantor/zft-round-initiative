@@ -1,0 +1,7 @@
+{
+  "name": "zft-round-initiative",
+  "version": "13.0.0-dev.6",
+  "private": true,
+  "type": "module",
+  "scripts": { "test": "node --test tests/*.test.js", "build": "python3 tools/build.py" }
+}

@@ -1,0 +1,13 @@
+{
+  "baseline_commit": "251a1dbe3e3aedd179b17d7582db183949cb840d",
+  "sources": {
+    "docs/reference/soft-initiative-reroll-v1.2.0.js": "Exact uploaded bytes: Pasted text(1).txt",
+    "docs/reference/set-turn-highest-v1.0.0.js": "Owner-pasted source; UTF-8 transcription with terminal newline",
+    "LICENSE": "Original main Git blob bd94e2af2e17272c2afb446f315a44926602362c"
+  },
+  "sha256": {
+    "docs/reference/soft-initiative-reroll-v1.2.0.js": "bac6d3c31ca465827e47d0023a2e5128e0c3f9ade8d3b36899591e225109a848",
+    "docs/reference/set-turn-highest-v1.0.0.js": "b6fa2ed0680f781a49e3c89fb280c862756ab9c9b7b48d5108ac1abaf6938e92",
+    "LICENSE": "b1e011e213bf927fda561cb53f79c6790c411393a1d3f7db027461af95ac45c6"
+  }
+}

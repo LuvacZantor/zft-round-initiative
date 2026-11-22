@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-22",
+  "repository": "LuvacZantor/zft-round-initiative",
+  "branch": "develop",
+  "parent_commit": "251a1dbe3e3aedd179b17d7582db183949cb840d",
+  "version": "13.0.0-dev.6",
+  "runtime_changed": false,
+  "protected_runtime_and_tests_files_verified": 37,
+  "delivered_artifacts": {
+    "zft-round-initiative-v13.0.0-dev.5.zip": {
+      "bytes": 98027,
+      "sha256": "05d7a2622d1a1c64c44dced01285c3417b9a284b6c617960e4c70ffff806827e"
+    },
+    "zft-round-initiative-v13.0.0-dev.6.zip": {
+      "bytes": 100170,
+      "sha256": "fa4d89ffc50ec8fd7e3415b4dcd9c0bea594c86a7f8023e6d3d89f7f0691afa7"
+    }
+  },
+  "evidence": "locally-validated; browser and live Foundry acceptance pending",
+  "tests": {
+    "tests": 96,
+    "pass": 96,
+    "fail": 0
+  },
+  "pause": "Owner requested pause and development repository checkpoint",
+  "next_runtime_version": "13.0.0-dev.7",
+  "original_build_record": "docs/validation/build.json retains historical pre-commit evidence"
+}

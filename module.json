@@ -1,0 +1,15 @@
+{
+  "id": "zft-round-initiative",
+  "title": "ZFT Round Initiative",
+  "description": "Manual round prompts, protected starting initiative snapshots, and current-round recovery using the existing combat tracker.",
+  "version": "13.0.0-dev.6",
+  "compatibility": { "minimum": "13", "maximum": "13" },
+  "authors": [{ "name": "Zantor's Realms" }],
+  "url": "https://github.com/LuvacZantor/zft-round-initiative",
+  "relationships": {
+    "systems": [{ "id": "dnd5e", "type": "system" }],
+    "recommends": [{ "id": "zft-tools", "type": "module" }]
+  },
+  "esmodules": ["scripts/main.js"],
+  "styles": ["styles/round-initiative.css"]
+}

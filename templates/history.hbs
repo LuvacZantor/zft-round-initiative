@@ -1,0 +1,19 @@
+<section class="zft-ri-body zft-ri-history-body">
+  <header class="zft-ri-heading"><span>Initiative History</span><small>GM only</small></header>
+  <p class="zft-ri-purpose">Protected starting initiative for each encounter and round. This view is read-only.</p>
+  {{#if error}}<p class="zft-ri-warning" role="alert">{{error}}</p>{{/if}}
+  {{#if empty}}<p>No protected rounds yet. Begin a round to save its starting initiative.</p>{{/if}}
+  <div class="zft-ri-history-list">
+    {{#each encounters}}
+    <section class="zft-ri-encounter"><h3>{{name}}</h3><small>Combat {{combatId}}</small>
+      {{#each rounds}}
+      <details><summary>Round {{round}} <span>{{date}}</span></summary>
+        <table><thead><tr><th scope="col">Combatant</th><th scope="col">Starting initiative</th></tr></thead><tbody>
+          {{#each rows}}<tr><td>{{name}}{{#if defeated}} <small>(defeated)</small>{{/if}}<small class="zft-ri-id">{{id}}</small></td><td>{{value}}</td></tr>{{/each}}
+        </tbody></table>
+      </details>
+      {{/each}}
+    </section>
+    {{/each}}
+  </div>
+</section>

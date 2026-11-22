@@ -1,0 +1,28 @@
+<section class="zft-ri-body {{#if compact}}zft-ri-compact-body{{else}}zft-ri-expanded-body{{/if}}">
+  <div class="zft-ri-summary" aria-live="polite">
+    <span class="zft-ri-round-label">R{{round}}</span>
+    <span class="zft-ri-name" tabindex="0" data-zft-ri-tip="Encounter: {{name}}" aria-label="Encounter: {{name}}">{{#if name}}{{name}}{{else}}No encounter{{/if}}</span>
+    <span class="zft-ri-state {{#if changed}}zft-ri-state-changed{{else}}{{#if snapshot}}zft-ri-saved{{/if}}{{/if}}">{{status}}</span>
+  </div>
+  {{#if error}}<p class="zft-ri-warning" role="alert">{{error}}</p>{{/if}}
+  {{#if inactiveGM}}<p class="zft-ri-help">View only: another GM is active.</p>{{/if}}
+  {{#if compact}}{{else}}
+  <section class="zft-ri-status">
+    <p>Foundry round: {{round}} · {{missingCount}} unrolled · {{phase}}</p>
+    {{#if snapshot}}<p class="zft-ri-saved">Starting initiative protected · {{savedAt}}</p>
+    {{else}}<p>No starting snapshot for this round. Use Begin Round after rolls are ready.</p>{{/if}}
+    {{#if changed}}<p class="zft-ri-warning">Initiative differs from the protected start. Restore Current Round is available.</p>{{/if}}
+  </section>
+  <p class="zft-ri-help">Advance rounds with Foundry's controls. This module never changes the round counter. Request new rolls, then Begin Round &amp; Protect before playing.</p>
+  {{/if}}
+  <div class="zft-ri-actions" role="toolbar" aria-label="Round actions">
+    {{#each actions}}
+    <span class="zft-ri-action-wrap" data-zft-ri-tip="{{tip}}" aria-label="{{label}}. {{tip}}" {{#if disabled}}tabindex="0"{{/if}}>
+      <button type="button" data-action="{{action}}" class="{{style}}" aria-label="{{label}}" {{#if disabled}}disabled{{/if}}>
+        <i class="fa-solid {{icon}}" aria-hidden="true"></i><span class="zft-ri-action-label">{{label}}</span>
+      </button>
+    </span>
+    {{/each}}
+  </div>
+  {{#if busy}}<p class="zft-ri-help" role="status">Working…</p>{{/if}}
+</section>
